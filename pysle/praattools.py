@@ -333,7 +333,7 @@ def syllabifyTextgrid(isleDict, tg, wordTierName, phoneTierName,
                             tmpStressJ = cvList.index(char)
                             break
 
-                print(phoneList)
+                # print(phoneList)
 
                 # Commented out because this is currently breaking
 
