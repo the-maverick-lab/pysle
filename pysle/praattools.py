@@ -333,8 +333,12 @@ def syllabifyTextgrid(isleDict, tg, wordTierName, phoneTierName,
                             tmpStressJ = cvList.index(char)
                             break
 
-                phoneStart, phoneEnd = phoneList[tmpStressJ][:2]
-                tonicPEntryList.append((phoneStart, phoneEnd, 'T'))
+                print(phoneList)
+
+                # Commented out because this is currently breaking
+
+                # phoneStart, phoneEnd = phoneList[tmpStressJ][:2]
+                # tonicPEntryList.append((phoneStart, phoneEnd, 'T'))
 
     # Create a textgrid with the two syllable-level tiers
     syllableTier = tgio.IntervalTier('syllable', syllableEntryList,
