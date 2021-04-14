@@ -276,7 +276,7 @@ def syllabifyTextgrid(isleDict, tg, wordTierName, phoneTierName,
                                                                 word,
                                                                 phoneList)
         except isletool.WordNotInISLE:
-            print("Word ('%s') not is isle -- skipping syllabification" % word)
+            print("Word ('%s') not is isle dictionary -- skipping syllabification" % word)
             continue
         except pronunciationtools.NullPronunciationError:
             print("Word ('%s') has no provided pronunciation" % word)
